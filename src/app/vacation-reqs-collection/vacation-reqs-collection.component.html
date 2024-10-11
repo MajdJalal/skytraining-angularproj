@@ -1,0 +1,24 @@
+<section id="Vacation-requests" class="border border-3 rounded m-3 p-3 mx-5">
+
+    <div class="input-group mb-3 flex-grow-1 align-items-center">
+        <i class="fa-solid fa-list-check fa-2x mb-3 mt-3"></i>
+        <h3 class="m-2">Vacation-requests</h3>
+        <input type="text" class="form-control rounded-4 mx-2" id="searchInput" placeholder="Search...">
+        <div class="input-group-append ">
+          <button class="btn btn-outline-secondary mt-2" type="button" id="searchVacationRequestsButton" (click)="onClickVacationRequestsButton()">Search</button>
+        </div >
+      </div>
+      <hr class="border-3">
+      <div id="vacation-requests-container" class="row">
+        <!-- <div  class="row col-4 mb-4" > -->
+
+            @for (card of cardDetails.slice(start, end); track $index;) {
+                <app-vacation-req-card [cardDetails]=  "card" class="card h-100  col-3 m-2"></app-vacation-req-card>
+            }
+
+        <!-- </div> -->
+      </div>
+    <div class="text-end">
+      <a href="vacation-requests" class="text-success text-decoration-none fw-bold">View More ></a>
+    </div>
+</section>

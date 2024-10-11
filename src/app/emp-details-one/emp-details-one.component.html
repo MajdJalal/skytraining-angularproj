@@ -1,0 +1,27 @@
+    <div id="user-header" class="d-flex justify-content-between">
+      <div class="d-flex align-items-center p-2">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Ahmad Azmi" class="rounded-circle mt-3" style="width: 50px; height: 50px;">
+        <div id="user-title">
+          <strong class="mx-1 d-block">{{employeeName}}</strong>
+          <small class="mx-1">{{employeeTitle}}</small>
+        </div>
+      </div>
+  
+      <div class="ml-auto">
+        <button type="button" class="btn btn-success m-3 bg-light text-success" id="view-profile">View Profile</button>
+      </div>
+    </div>
+  
+    <div id="user-statistics" class="d-flex flex-wrap">
+      <div class="d-flex align-items-center m-3">
+        <i class="fa-solid fa-user fa-2x"></i>
+        <p class="card-text mx-3"><strong>Reporting To:</strong><br> {{employeeReporter}}</p>
+      </div>
+  
+      <div class="d-flex align-items-center m-3">
+        <i class="fa-solid fa-chart-line fa-2x"></i>
+        <p class="card-text mx-2"><strong>Corporate Level:</strong><br>{{corporateLvl}}</p>
+      </div>
+    </div>
+
+  

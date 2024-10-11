@@ -1,0 +1,21 @@
+<nav>
+    <ul class="pagination justify-content-center mt-4  rounded-pill p-2 ">
+      <li class="page-item  bg-secondary text-white rounded-circle fs-3 " id="back">
+            <span aria-hidden="true">&laquo;</span>
+      </li>
+        <li class="page-item page-link  rounded-circle" 
+            [ngStyle]="{'background-color': buttons[0] ? 'green' : 'white'}"
+            (click)="displayCards(1)"
+            id="1">1</li>
+        <li class="page-item page-link  rounded-circle "
+            [ngStyle]="{'background-color': buttons[1] ? 'green' : 'white'}" id = "2" 
+            (click)="displayCards(2)"  >2</li>
+        <li class="page-item page-link  rounded-circle " id="3"
+            [ngStyle]="{'background-color': buttons[2] ? 'green' : 'white'}"
+            (click)="displayCards(3)">3</li>
+        <!-- Next button -->
+      <li class="page-item bg-secondary text-white rounded-circle fs-3 next " id="next">
+        <span aria-hidden="true">&raquo;</span>
+      </li>
+    </ul>
+</nav>
